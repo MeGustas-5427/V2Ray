@@ -1,0 +1,17 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+初始化项目流程.md
+.idea
+
+config.toml
+staticfiles
+static
+logs/
