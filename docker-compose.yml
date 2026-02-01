@@ -7,12 +7,12 @@ services:
     restart: unless-stopped
     ports:
       - "10086:10086/tcp"
-#    command: ["run", "-c", "/etc/v2ray/config.json"]
+    command: ["run", "-c", "/etc/v2ray/config.json"]
     volumes:
       - ./config.json:/etc/v2ray/config.json:ro
       - ./logs:/var/log/v2ray
-    networks: ["edge"]
-
-networks:
-  edge:
-    external: true
+#    networks: ["edge"]
+#
+#networks:
+#  edge:
+#    external: true
